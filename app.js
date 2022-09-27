@@ -16,7 +16,7 @@ app.use(express.static("public"));
 
 const workItems = [];
 
-mongoose.connect(`mongodb+srv://${id}:${password}@cluster0.67znfeb.mongodb.net/todolistDB`, {useNewUrlParser: true});
+mongoose.connect(`mongodb+srv://${id}:${password}@cluster0.67znfeb.mongodb.net/todolistDB?retryWrites=true&w=majority`, {useNewUrlParser: true});
 
 const itemsSchema = new mongoose.Schema({
   name: String,
