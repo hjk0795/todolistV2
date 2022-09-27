@@ -6,8 +6,8 @@ const _ = require("lodash");
 const conf = require("dotenv").config();
 const app = express();
 
-let id = process.env.id;
-let password = process.env.password;
+let id = process.env.ID;
+let password = process.env.PASSWORD;
 
 app.set('view engine', 'ejs');
 
